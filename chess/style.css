@@ -12,7 +12,7 @@ header {
 
 .board {
   display: inline-block;
-  board: 2px solid #333;
+  border: 2px solid #333;
 }
 
 .row {
