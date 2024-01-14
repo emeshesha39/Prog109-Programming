@@ -44,7 +44,7 @@ header {
   right: 0;
   bottom: 0;
   background: url('path/to/chess-piece-image.png') no-repeat center center;
-  background-size: 50%; /* Adjust the size of the chess piece image */
+  background-size: 10%; /* Adjust the size of the chess piece image */
 }
 
 footer {
