@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+
 }
 
 header {
@@ -9,47 +10,32 @@ header {
   padding: 20px;
 }
 
-.chessboard-heading {
-  margin: 10px 0;
-  font-family: 'YourSelectedFont', sans-serif; /* Replace 'YourSelectedFont' with the font you choose from Font Library */
+.board {
+  display: inline-block;
+  board: 2px solid #333;
 }
 
-#chessboard {
-  display: grid;
-  grid-template-columns: repeat(8, 12.5%);
-  grid-template-rows: repeat(8, 12.5%);
-  width: 50%;
-  margin: 20px auto;
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#chessboard div {
-  width: 100%;
-  padding-bottom: 100%;
-  position: relative;
+.square{
+  width: 60px;
+  height: 60px;
 }
 
-#chessboard div:nth-child(even) {
-  background-color: #eee;
+.white{
+  background: #fff;
 }
 
-#chessboard div:nth-child(odd) {
-  background-color: #ddd;
+.black{
+  background: #333;
 }
-
-#chessboard div:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url('path/to/chess-piece-image.png') no-repeat center center;
-  background-size: 10%; /* Adjust the size of the chess piece image */
-}
-
 footer {
   background-color: #333; /* Dark background color */
-  padding: 20px;
+  padding: 1px;
   text-align: center;
   color: white;
 }
