@@ -1,13 +1,13 @@
-body {
+body.water-blue-bg {
   margin: 0;
   padding: 0;
 
 }
 
 header {
-  background-color: #4CAF50; /* Green background color */
+  background-color: #6495ED; /* Green background color */
   text-align: center;
-  padding: 20px;
+  padding: 40px;
 }
 
 .board {
@@ -26,29 +26,58 @@ header {
   height: 60px;
 }
 
+#chessboard {
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  width: 1100px; /* Adjust the width as needed */
+  margin: 1px auto;
+  background-color: #6495ED; /* Water blue color */
+
+}
+
 .white{
-border: 1px solid black;
-width: 10%;
-height: 60px;
-background-color:white;
-float:left;
+  border: 1px solid black;
+  width: 10%;
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color:#8b4513; /* Dark brown */
+  float:left;
 }
 
 .black{
-border: 1px solid black;
-width: 10%;
-height: 60px;
-background-color:#787878;
-float:left;
+  border: 1px solid black;
+  width: 10%;
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color:#d2b48c; /* Light brown */
+  float:left;
 }
 
+
+#chessboard div:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('path/to/chess-piece-image.png') no-repeat center center;
+  background-size: 600%; /* Adjust the size of the chess piece image */
+
+}
 footer {
-  background-color: #333; /* Dark background color */
-  padding: 1px;
+  background-color: #6495ED; /* Dark background color */
+  padding: 20px;
   text-align: center;
   color: white;
 }
 
-footer img {
-  margin: 10px;
-}
+footer img {                                                                                                          
+  margin: 5px;
+} 
