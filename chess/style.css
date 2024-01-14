@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #4CAF50; /* Green background color */
+  text-align: center;
+  padding: 20px;
+}
+
+.chessboard-heading {
+  margin: 10px 0;
+  font-family: 'YourSelectedFont', sans-serif; /* Replace 'YourSelectedFont' with the font you choose from Font Library */
+}
+
+#chessboard {
+  display: grid;
+  grid-template-columns: repeat(8, 12.5%);
+  grid-template-rows: repeat(8, 12.5%);
+  width: 50%;
+  margin: 20px auto;
+}
+
+#chessboard div {
+  width: 100%;
+  padding-bottom: 100%;
+  position: relative;
+}
+
+#chessboard div:nth-child(even) {
+  background-color: #eee;
+}
+
+#chessboard div:nth-child(odd) {
+  background-color: #ddd;
+}
+
+#chessboard div:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('path/to/chess-piece-image.png') no-repeat center center;
+  background-size: 50%; /* Adjust the size of the chess piece image */
+}
+
+footer {
+  background-color: #333; /* Dark background color */
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+footer img {
+  margin: 10px;
+}
