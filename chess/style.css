@@ -1,5 +1,5 @@
 body.water-blue-bg {
-    background-color: #6495ED; /* Water blue color */
+  background-color: #6495ED; /* Water blue color */
   margin: 0;
   padding: 0;
 
@@ -62,17 +62,6 @@ header {
 }
 
 
-#chessboard div:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url('path/to/chess-piece-image.png') no-repeat center center;
-  background-size: 600%; /* Adjust the size of the chess piece image */
-
-}
 footer {
   background: linear-gradient(to right, #3498db, #2ecc71); /* Blue to green gradient */
   padding: 30px;
@@ -82,4 +71,5 @@ footer {
 
 footer img {                                                                                                          
   margin: 5px;                                                                                                              
-}
+}  
+  
