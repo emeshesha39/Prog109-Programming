@@ -8,6 +8,7 @@ body.water-blue-bg {
 header {
   background:  linear-gradient(to right, #3498db, #2ecc71); /* Blue to green gradient */  
   text-align: center;
+  font-family: DancingScriptRegular;
   padding: 55px;
 }
 
@@ -81,5 +82,4 @@ footer {
 
 footer img {                                                                                                          
   margin: 5px;                                                                                                              
-}                                                                                                          
-}  
+}
