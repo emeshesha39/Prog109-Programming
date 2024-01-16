@@ -2,6 +2,8 @@ body.water-blue-bg {
   background-color: #6495ED; /* Water blue color */
   margin: 0;
   padding: 0;
+  overflow: hidden;
+  
 
 }
 
@@ -9,7 +11,7 @@ header {
   background:  linear-gradient(to right, #3498db, #2ecc71); /* Blue to green gradient */  
   text-align: center;
   font-family: DancingScriptRegular;
-  padding: 55px;
+  padding: 40px;
 }
 
 .board {
@@ -31,8 +33,10 @@ header {
 #chessboard {
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(8, 1fr);
-  width: 2000px; /* Adjust the width as needed */
-  margin: 1px auto;
+  width: 1000px; /* Adjust the width as needed */
+  height: 1000px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #6495ED; /* Water blue color */
 
 }
@@ -40,7 +44,7 @@ header {
 .white{
   border: 1px solid black;
   width: 10%;
-  height: 100px;
+  height: 123px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -52,7 +56,7 @@ header {
 .black{
   border: 1px solid black;
   width: 10%;
-  height: 100px;
+  height: 123px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -64,7 +68,7 @@ header {
 
 footer {
   background: linear-gradient(to right, #3498db, #2ecc71); /* Blue to green gradient */
-  padding: 95px;
+  padding: 40px;
   text-align: center;
   color: white;
 }
