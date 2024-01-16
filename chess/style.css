@@ -1,5 +1,5 @@
 body.water-blue-bg {
-  background-color: #6495ED; /* Water blue color */
+  background: url("https://img.freepik.com/free-photo/abstract-dark-background-with-flowing-colouful-waves_1048-13124.jpg?w=1060&t=st=1705376474~exp=1705377074~hmac=0d37b64f34748e439281679f359cf0b854d0687de453d1b22ffe819dcc400527") center center/cover;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -26,18 +26,18 @@ header {
 }
 
 .square{
-  width: 60px;
-  height: 60px;
+  width: 60%;
+  height: 60%;
 }
 
 #chessboard {
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(8, 1fr);
-  width: 1000px; /* Adjust the width as needed */
+  width: 1200px; /* Adjust the width as needed */
   height: 1000px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #6495ED; /* Water blue color */
+
 
 }
 
@@ -75,4 +75,4 @@ footer {
 
 footer img {                                                                                                          
   margin: 5px;                                                                                                              
-} 
+}
