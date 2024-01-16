@@ -64,12 +64,11 @@ header {
 
 footer {
   background: linear-gradient(to right, #3498db, #2ecc71); /* Blue to green gradient */
-  padding: 30px;
+  padding: 95px;
   text-align: center;
   color: white;
 }
 
 footer img {                                                                                                          
   margin: 5px;                                                                                                              
-}  
-  
+} 
