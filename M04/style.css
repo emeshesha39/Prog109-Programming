@@ -54,12 +54,11 @@ li {
   
 }
 
-#nav, #footer {
+#nav {
   background-color: #CBC3E3;
   padding: 0.5em 0;
   text-align: center;
 }
-
 
 #feature, .article {
   height: 10em;
@@ -79,4 +78,15 @@ li {
   //background-size: contain;
   background-position: right;                                                                                                                                                      
   background-repeat: no-repeat;
+}
+
+
+#footer {
+  background-color: #800080;
+  padding: 0.5em 0;
+  text-align: center;
+}
+
+#footer p {
+  color: #FFFFFF; /* or you can use color: white; */
 }
