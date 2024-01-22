@@ -1,0 +1,76 @@
+#header {
+  font-family: 'SairaSemiCondensedRegular';
+  color: #FFA500;
+  text-align: center;
+}
+
+body {
+  width: 90%;
+  margin: 0 auto;
+  background-image: url("https://img.freepik.com/free-photo/floral-ornaments_23-2148134159.jpg?w=2000&t=st=1705901099~exp=1705901699~hmac=b9003aa6151023450b25765e4b339a06f93deb51f7f0a99009f9825f529c90c2");
+  background-size: cover; /* Adjust the background size */
+  background-position: middle center; /* Center the background image horizontally and vertically */
+
+}
+
+#content {
+  overflow: hidden;
+}
+
+#nav, #feature, #footer {
+  margin: 1%;
+}
+
+.column1 {
+   width: 31.3%;
+   float: left;
+   margin: 1%;
+   text-align: center;
+   background-color: #FFD700; /* Yellow */
+}
+
+.column2 {
+   width: 31.3%;
+   float: left;
+   margin: 1%;
+   text-align: center;
+   background-color: #EE82EE; /* Dark Turquoise */
+}
+
+.column3 {
+   width: 31.3%;
+   float: left;
+   margin: 1%;
+   margin-right: 0%;
+   text-align: center;
+   background-color: #FF6347; /* Tomato */
+}
+
+li {
+  display: inline;
+  padding: 0.5em;
+
+  
+}
+
+#nav, #footer {
+  background-color: #CBC3E3;
+  padding: 0.5em 0;
+  text-align: center;
+}
+
+
+#feature, .article {
+  height: 10em;
+  margin-bottom: 1em;
+  text-align: center;
+
+}
+
+#feature {
+  background-color: #8CC63E;
+  background-image: url("https://i.pinimg.com/564x/07/8c/ba/078cba6ebaddac3c785c79cc7986f032.jpg");
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+}
