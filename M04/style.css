@@ -1,15 +1,16 @@
 #header {
   font-family: 'SairaSemiCondensedRegular';
-  color: #800080;
+  color: #FFA500;
   text-align: center;
 }
 
 body {
   width: 90%;
   margin: 0 auto;
-  background-image: url("https://img.freepik.com/free-photo/floral-ornaments_23-2148134159.jpg?w=2000&t=st=1705901099~exp=1705901699~hmac=b9003aa6151023450b25765e4b339a06f93deb51f7f0a99009f9825f529c90c2");
+  background-image: url("https://cdn.pixabay.com/photo/2013/07/21/13/00/rose-165819_1280.jpg");
   background-size: cover; /* Adjust the background size */
   background-position: middle center; /* Center the background image horizontally and vertically */
+  background-attachment: fixed; /* Fix the background image while scrolling */
 
 }
 
