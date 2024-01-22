@@ -9,7 +9,6 @@ body {
   margin: 0 auto;
   background-image: url("https://cdn.pixabay.com/photo/2013/07/21/13/00/rose-165819_1280.jpg");
   background-size: cover; /* Adjust the background size */
-  background-position: middle center; /* Center the background image horizontally and vertically */
   background-attachment: fixed; /* Fix the background image while scrolling */
 
 }
@@ -75,7 +74,6 @@ li {
   background-color: #8CC63E;
   background-image: url("https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510_1280.jpg");
   background-size: cover; /* Set your desired width and height */
-  //background-size: contain;
   background-position: right;                                                                                                                                                      
   background-repeat: no-repeat;
 }
