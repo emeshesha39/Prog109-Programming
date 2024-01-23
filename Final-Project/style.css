@@ -1,6 +1,5 @@
 
 
-
 body {
   width: 90%;
   margin: 0 auto;
@@ -8,8 +7,38 @@ body {
   background-size: cover; /* Adjust the background size */
   background-attachment: fixed; /* Fix the background image while scrolling */
 
+
 }
 
+
+form {
+  margin: 20px auto; /* Center the form within its container */
+  max-width: 400px; /* Set a maximum width for the form */
+}
+
+label {
+  display: block; /* Display labels as block elements */
+  margin-bottom: 8px; /* Add spacing between labels and form fields */
+  text-align: left; /* Align labels to the left */
+}
+
+input,
+textarea {
+  width: 100%; /* Make form fields take up full width */
+  padding: 8px; /* Add padding to form fields */
+  margin-bottom: 15px; /* Add spacing between form fields */
+  box-sizing: border-box; /* Include padding and border in the total width/height */
+}
+
+input[type="submit"] {
+  background-color: #800080; /* Customize the submit button background color */
+  color: #fff; /* Set text color for the submit button */
+  cursor: pointer; /* Change cursor on hover */
+}
+
+input[type="submit"]:hover {
+  background-color: #4B0082; /* Change background color on hover */
+}
 
 a { 
   color: #000088; 
