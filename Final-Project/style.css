@@ -1,5 +1,3 @@
-
-
 body {
   width: 90%;
   margin: 0 auto;
@@ -104,28 +102,23 @@ text-align: center;
 
 
 #topmenu {
-background: #CBC3E3;
-padding: 10px 20px;
-border-bottom: 1px solid #e1e1e1;
-border-top: 1px solid #e1e1e1;
+  background: #4d4dff;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ccc;
 }
 
-
-#topmenu ul { 
-  margin: 0; 
-  padding: 0; 
+#topmenu ul {
   list-style-type: none;
-  
 }
 
-#topmenu li { 
-  display: inline; 
-  padding: 0 20px 0 0 
-  
+#topmenu li {
+  display: inline;
+  margin-right: 20px;
 }
 
 #topmenu li a {
-   text-decoration: none; 
+  text-decoration: none;
+  color: #fff;
 }
 
 .search { 
