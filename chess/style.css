@@ -2,9 +2,7 @@ body.water-blue-bg {
   background: url("https://i.pinimg.com/564x/07/8c/ba/078cba6ebaddac3c785c79cc7986f032.jpg") center center/cover;
   margin: 0;
   padding: 0;
-  overflow: hidden;
-  
-
+  /* Remove the overflow: hidden; property */
 }
 
 header {
@@ -75,4 +73,4 @@ footer {
 
 footer img {                                                                                                          
   margin: 5px;                                                                                                              
-}
+}  
