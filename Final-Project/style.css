@@ -47,57 +47,41 @@ a:hover {
 }
 
 
-#wrap { 
-margin: 40px auto;
-width: 940px;
-background-image: url("https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510_1280.jpg");
-background-size: cover; /* Set your desired width and height */
-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
--moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
--webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
--webkit-border-radius: 10px;
--moz-border-radius: 10px;
-border-radius: 10px;
+#wrap {
+  margin: 40px auto;
+  width: 80%; /* Adjusted width */
+  background-image: url("https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510_1280.jpg");
+  background-size: cover;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
 }
 
 
 
 #header {
--webkit-border-top-left-radius: 10px;
--webkit-border-top-right-radius: 10px;
--moz-border-radius-topleft: 10px;
--moz-border-radius-topright: 10px;
-border-top-left-radius: 10px;
-border-top-right-radius: 10px;
-padding: 20px 0 40px 0;
+  background: #f9f9f9;
+  padding: 20px 0 20px 0; /* Adjusted padding */
+  text-align: center;
 }
-
 
 #header h1 {
-margin: 0;
-padding: 0 0 0 30px;
-font-weight: bold;
-color: #3f3f3f;
-font-size: 38px;
-line-height: 65px;
-letter-spacing: -1px;
-text-align: center;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  color: #333;
+  font-size: 36px;
+  line-height: 1.5;
 }
 
-
 #header h2 {
--webkit-border-radius: 10px;
--moz-border-radius: 10px;
-border-radius: 10px;
-margin: 0 0 0 20px; 
-padding: 5px 12px;
-font-weight: normal;
-color: #171717;
-font-size: 22px;
-letter-spacing: -1px;
-background: #FFEE9F;
-border: 1px solid #FFE25F;
-text-align: center;
+  margin: 10px 0;
+  padding: 10px;
+  font-weight: normal;
+  color: #fff;
+  font-size: 20px;
+  background: #4d4dff;
+  border: 1px solid #4d4dff;
+  border-radius: 10px;
 }
 
 
