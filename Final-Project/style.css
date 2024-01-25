@@ -193,3 +193,21 @@ border-top: 1px solid #1f1f1f;
 .left { float: left; }
 .right { float: right; }
 .clear { clear: both; }
+
+/* CSS for the page numbers */
+.screenshot-container {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px; /* Add margin at the bottom of each screenshot */
+}
+
+.page-number {
+    position: absolute;
+    bottom: 5px; /* Adjust the distance from the bottom */
+    right: 5px; /* Adjust the distance from the right */
+    background-color: #fff;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 5px; /* Add border-radius for rounded corners */
+}
