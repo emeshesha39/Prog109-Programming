@@ -1,7 +1,7 @@
 body {
-  width: 100%; /* Set to 100% to prevent horizontal scrolling */
+  width: 100%;
   margin: 0;
-  overflow: hidden; /* Remove the scroll bar */
+  /* Remove the overflow: hidden; property */
   background-image: url("https://cdn.pixabay.com/photo/2013/07/21/13/00/rose-165819_1280.jpg");
   background-size: cover;
   background-attachment: fixed;
