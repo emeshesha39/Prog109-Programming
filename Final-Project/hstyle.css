@@ -184,7 +184,7 @@ a:hover {
 
 #topmenu ul li a {
   text-decoration: none;
-  color: #00ff00;
+  color: #fff;
   transition: background-color 0.3s; /* Add smooth transition for a better visual effect */
 }
 
