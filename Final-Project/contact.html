@@ -69,7 +69,24 @@
 
             return true;
         }
-    </script>
-  </div>
+    </script> 
+   </div>
+  
+      <script>
+    // Optional: Add JavaScript to handle click events and apply styling
+    document.addEventListener("DOMContentLoaded", function () {
+      var menuItems = document.querySelectorAll("#topmenu ul li a");
+
+      menuItems.forEach(function (item) {
+        item.addEventListener("click", function () {
+          menuItems.forEach(function (resetItem) {
+            resetItem.classList.remove("clicked");
+          });
+
+          this.classList.add("clicked");
+        });
+      });
+    });
+  </script>
 </body>
 </html>
