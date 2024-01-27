@@ -1,51 +1,20 @@
 body {
-  width: 90%;
-  margin: 0 auto;
+  width: 100%;
+  margin: 0;
+  /* Remove the overflow: hidden; property */
   background-image: url("https://cdn.pixabay.com/photo/2013/07/21/13/00/rose-165819_1280.jpg");
-  background-size: cover; /* Adjust the background size */
-  background-attachment: fixed; /* Fix the background image while scrolling */
-
-
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Arial', sans-serif;
 }
 
-
-form {
-  margin: 20px auto; /* Center the form within its container */
-  max-width: 400px; /* Set a maximum width for the form */
+a {
+  color: #4d4dff;
 }
 
-label {
-  display: block; /* Display labels as block elements */
-  margin-bottom: 8px; /* Add spacing between labels and form fields */
-  text-align: left; /* Align labels to the left */
+a:hover {
+  color: #ff6666;
 }
-
-input,
-textarea {
-  width: 100%; /* Make form fields take up full width */
-  padding: 8px; /* Add padding to form fields */
-  margin-bottom: 15px; /* Add spacing between form fields */
-  box-sizing: border-box; /* Include padding and border in the total width/height */
-}
-
-input[type="submit"] {
-  background-color: #800080; /* Customize the submit button background color */
-  color: #fff; /* Set text color for the submit button */
-  cursor: pointer; /* Change cursor on hover */
-}
-
-input[type="submit"]:hover {
-  background-color: #4B0082; /* Change background color on hover */
-}
-
-a { 
-  color: #000088; 
-}
-
-a:hover { 
-  color: #880000; 
-}
-
 
 #wrap {
   margin: 40px auto;
@@ -55,8 +24,6 @@ a:hover {
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 }
-
-
 
 #header {
   background: #f9f9f9;
@@ -84,7 +51,6 @@ a:hover {
   border-radius: 10px;
 }
 
-
 #topmenu {
   background: #4d4dff;
   padding: 10px 20px;
@@ -105,114 +71,120 @@ a:hover {
   color: #fff;
 }
 
-.search { 
-  float: right;
+.search {
+  float: right; /* Align to the right */
+  margin-top: 20px; /* Adjust the top margin */
 }
 
 #menu {
-font-size: 14px;
-float: right; 
-width: 300px; 
-color: #fff;
-margin: 30px 20px 20px 0;
-
-
-}
-#menu h3 {
-font-weight: normal; background: #5f5f5f; color: #fff; padding: 10px; margin: 10px 0; 
-}
-
-#menu ul { 
--webkit-border-radius: 10px;
--moz-border-radius: 10px;
-border-radius: 10px;
-list-style-type: none; margin: 0; padding: 0 10px 10px 10px;
-}
-#menu ul li a { color: #12c; text-decoration: none; border-bottom: 1px dotted #12c; }
-#menu ul li a:hover { color: #c12; border-bottom: 1px dotted #c12; }
-
-#content { 
-  float: left; 
-  width: 580px; 
-  margin: 10px 0 40px 20px;
-}
-
-#content h2 { 
-  font-weight: normal; 
-  font-size: 22px; 
-  line-height: 33px; 
-}
-
-#content h3 { 
-  font-size: 17px; 
-  font-weight: normal;
-}
-
-.cleft { 
-  float: left; 
-  width: 280px; 
-  margin: 10px 0; 
-}
-
-.cright { 
+  font-size: 14px;
   float: right;
-  width: 280px; 
-  margin: 10px 0; 
+  width: 25%; /* Adjusted width */
+  color: #fff;
+  margin: 20px 20px 20px 0;
 }
 
-section {
-  background-color: #f0f0f0; /* Set your preferred background color */
-  color: #800080;
-  padding: 20px; /* Add padding for better visual appearance */
-    /* Add more styling as needed */
+#menu h3 {
+  font-weight: normal;
+  background: #666;
+  color: #fff;
+  padding: 5px;
+  margin: 10px 0;
 }
 
-#footer { 
--webkit-border-bottom-right-radius: 10px;
--webkit-border-bottom-left-radius: 10px;
--moz-border-radius-bottomright: 10px;
--moz-border-radius-bottomleft: 10px;
-border-bottom-right-radius: 10px;
-border-bottom-left-radius: 10px;
-background-color: #800080;
-color: #fff;
-padding: 20px;
-border-top: 1px solid #1f1f1f;
+#menu ul {
+  border-radius: 10px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0 10px 10px 10px;
 }
 
-#footer a { 
-  color: #fff; 
-  text-decoration: none; 
+#menu ul li a {
+  color: #12c;
+  text-decoration: none;
+  border-bottom: 1px dotted #12c;
+  display: block;
+  padding: 8px 0;
+}
+
+#menu ul li a:hover {
+  color: #c12;
+  border-bottom: 1px dotted #c12;
+}
+
+#content {
+  float: left;
+  width: 65%; /* Adjusted width */
+  margin: 20px 0 40px 20px;
+}
+
+#content h2 {
+  font-weight: bold;
+  font-size: 28px; /* Adjusted font size */
+  line-height: 1.5;
+  color: #4d4dff;
+}
+
+#content h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.cleft img {
+  width: 100%; /* Set the desired width for the image */
+  height: auto;
+  margin: 10px 0;
+  max-width: 30%;
+}
+
+.sleft img {
+  width: 100%; /* Set the desired width for the image */
+  height: auto;
+  margin: 10px 0;
+  max-width: 30%;
+}
+.cright img {
+  width: 100%; /* Set the desired width for the image */
+  height: auto;
+  margin: 10px 0;
+  max-width: 30%;
+}
+
+#footer {
+  background-color: #4d4dff;
+  color: #fff;
+  padding: 20px;
+  border-top: 1px solid #333;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#footer a {
+  color: #fff;
+  text-decoration: none;
   border-bottom: 1px dotted #fff;
 }
 
-#footer a:hover { 
-  border-bottom: 1px dotted #ccc; 
+#footer a:hover {
+  border-bottom: 1px dotted #ccc;
 }
 
-.left { float: left; }
-.right { float: right; }
-.clear { clear: both; }
-
-/* CSS for the page numbers */
-.screenshot-container {
-    position: relative;
-    display: inline-block;
-    margin-bottom: 20px; /* Add margin at the bottom of each screenshot */
+.left {
+  float: left;
 }
 
-/* Adjust the top and left values as needed */
-.page-number {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    background-color: #fff; /* Optional: Add background color for better visibility */
-    padding: 5px;
+.right {
+  float: right;
+}
+
+.clear {
+  clear: both;
 }
 
 #topmenu ul li a {
   text-decoration: none;
-  color: #00ff00;
+  color: #fff;
   transition: background-color 0.3s; /* Add smooth transition for a better visual effect */
 }
 
