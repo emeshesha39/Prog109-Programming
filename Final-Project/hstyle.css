@@ -181,3 +181,17 @@ a:hover {
 .clear {
   clear: both;
 }
+
+#topmenu ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+#topmenu ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+#topmenu ul li a.clicked {
+  background-color: #eee; /* Change the background color as needed */
+  color: #555; /* Change the text color as needed */
