@@ -189,7 +189,7 @@ a:hover {
 
 #topmenu ul li a {
   text-decoration: none;
-  color: #333;
+  color: #000000;
 }
 
 #topmenu ul li a.clicked {
