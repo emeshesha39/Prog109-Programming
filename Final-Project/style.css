@@ -201,27 +201,22 @@ border-top: 1px solid #1f1f1f;
     margin-bottom: 20px; /* Add margin at the bottom of each screenshot */
 }
 
+/* Adjust the top and left values as needed */
 .page-number {
     position: absolute;
-    bottom: 5px; /* Adjust the distance from the bottom */
-    right: 5px; /* Adjust the distance from the right */
-    background-color: #fff;
+    bottom: 10px;
+    left: 10px;
+    background-color: #fff; /* Optional: Add background color for better visibility */
     padding: 5px;
-    font-size: 12px;
-    font-weight: bold;
-    border-radius: 5px; /* Add border-radius for rounded corners */
-}
-
-#topmenu ul li {
-  display: inline-block;
-  margin-right: 10px;
 }
 
 #topmenu ul li a {
   text-decoration: none;
-  color: #000000;
+  color: #00ff00;
+  transition: background-color 0.3s; /* Add smooth transition for a better visual effect */
 }
 
-#topmenu ul li a.clicked {
-  background-color: #eee; /* Change the background color as needed */
-  color: #555; /* Change the text color as needed */
+#topmenu ul li a:hover {
+  background-color: #808080; /* Change to the desired hover color (gray in this example) */
+  color: #fff; /* Optionally, change the text color on hover */
+}
