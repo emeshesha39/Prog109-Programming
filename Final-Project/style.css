@@ -201,15 +201,13 @@ border-top: 1px solid #1f1f1f;
     margin-bottom: 20px; /* Add margin at the bottom of each screenshot */
 }
 
+/* Adjust the top and left values as needed */
 .page-number {
     position: absolute;
-    bottom: 5px; /* Adjust the distance from the bottom */
-    right: 5px; /* Adjust the distance from the right */
-    background-color: #fff;
+    bottom: 10px;
+    left: 10px;
+    background-color: #fff; /* Optional: Add background color for better visibility */
     padding: 5px;
-    font-size: 12px;
-    font-weight: bold;
-    border-radius: 5px; /* Add border-radius for rounded corners */
 }
 
 #topmenu ul li a {
