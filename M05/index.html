@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Table</title>
+
+    <style>
+      
+      /* CSS Styles */
+        @import url('http://fonts.googleapis.com/css?family=Wellfleet');
+
+        body {
+            background-color: #523620;
+            color: #fff;
+            font-family: 'Wellfleet', times, serif;
+            font-size: 150%;
+            margin: 0px 0px 0px 0px;
+        }
+
+      /* Heading Styles */
+        h1 {
+            background-image: url('https://javascriptbook.com/code/c04/images/bullseye-logo.png');
+            background-repeat: no-repeat;
+            text-indent: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            height: 109px;
+            width: 643px;
+            margin: 40px auto;
+            color: #fff; /* Add this line to set the text color */
+        }
+  
+      /* Teacher Image Styles */
+        #teacher {
+            float: right;
+            margin: 0px 30px 0px 0px;
+        }
+
+        #teacher2 {
+            float: right;
+            margin: 135px 30px 0px 0px;
+        }
+  
+        #page1, #page2 {
+            background-color: #fecc6f;
+            height: 596px;
+            padding: 10px;
+            min-width: 779px;
+        }
+
+        #page2 {
+            height: 730px;
+        }
+
+      /* Answer Styles */
+        #answer {
+            border: 12px double #fff;
+            color: #523620;
+            text-align: left;
+            padding: 20px;
+            margin: 70px auto 10px auto;
+            width: 250px;
+            text-align: center;
+        }
+
+      /* Blackboard Styles */
+        #blackboard {
+            background-color: #425a5a;
+            border: 25px solid #523620;
+            border-radius: 20px;
+            padding: 40px 20px;
+            margin: 0px auto;
+            height: 400px;
+            width: 600px;
+            text-align: center;
+        }
+
+      /* Table Styles */
+        table {
+            margin: 0 auto; /* Center the table horizontally */
+            margin-top: 10px; /* Add some top margin if needed */
+            width: 50%;
+            max-width: 100%;
+            max-height: 100%;
+            table-layout: fixed;
+        }
+
+        th, td {
+            padding: 5px;
+            border: 1px solid #fff;
+            width: 50%;
+            box-sizing: border-box;
+            font-size: 50%;
+        }
+    </style>
+</head>
+<body>
+
+  <section id="page2">
+    
+      <h1>Bullseye</h1> 
+      <img src="https://javascriptbook.com/code/c04/images/teacher.png" id="teacher2" alt="" />
+      <section id="blackboard">
+          <!-- Multiplication Table will be placed here -->
+      </section>
+    
+  </section>
+    
+  <script>
+    
+    // JavaScript code for generating multiplication table
+    
+    
+    // Prompt user for a value
+    var table = prompt('Enter a number for the multiplication table:');
+
+    // Initialize heading
+    var msg = '<h2>Multiplication Table for ' + table + '</h2>';
+
+    // Display multiplication table
+    msg += '<table>';
+    for (var i = 1; i <= 10; i++) {
+        msg += '<tr>';
+        msg += '<td>' + table + ' &times; ' + i + '</td>';
+        msg += '<td>' + (table * i) + '</td>';
+        msg += '</tr>';
+    }
+    msg += '</table>';
+
+    // Update the content of the blackboard with the generated table
+    document.getElementById('blackboard').innerHTML = msg;
+  </script>
+</body>
+</html>
