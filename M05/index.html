@@ -6,8 +6,7 @@
     <title>Multiplication Table</title>
 
     <style>
-      
-      /* CSS Styles */
+        /* CSS Styles */
         @import url('http://fonts.googleapis.com/css?family=Wellfleet');
 
         body {
@@ -18,7 +17,7 @@
             margin: 0px 0px 0px 0px;
         }
 
-      /* Heading Styles */
+        /* Heading Styles */
         h1 {
             background-image: url('https://javascriptbook.com/code/c04/images/bullseye-logo.png');
             background-repeat: no-repeat;
@@ -30,8 +29,8 @@
             margin: 40px auto;
             color: #fff; /* Add this line to set the text color */
         }
-  
-      /* Teacher Image Styles */
+
+        /* Teacher Image Styles */
         #teacher {
             float: right;
             margin: 0px 30px 0px 0px;
@@ -41,7 +40,8 @@
             float: right;
             margin: 135px 30px 0px 0px;
         }
-  
+
+        /* Page Styles */
         #page1, #page2 {
             background-color: #fecc6f;
             height: 596px;
@@ -53,7 +53,7 @@
             height: 730px;
         }
 
-      /* Answer Styles */
+        /* Answer Styles */
         #answer {
             border: 12px double #fff;
             color: #523620;
@@ -64,7 +64,7 @@
             text-align: center;
         }
 
-      /* Blackboard Styles */
+        /* Blackboard Styles */
         #blackboard {
             background-color: #425a5a;
             border: 25px solid #523620;
@@ -76,7 +76,7 @@
             text-align: center;
         }
 
-      /* Table Styles */
+        /* Table Styles */
         table {
             margin: 0 auto; /* Center the table horizontally */
             margin-top: 10px; /* Add some top margin if needed */
@@ -93,43 +93,60 @@
             box-sizing: border-box;
             font-size: 50%;
         }
+
+        /* Button Styles */
+        #promptButton {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #fecc6f;
+            color: #523620;
+            border: none;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
 
-  <section id="page2">
-    
-      <h1>Bullseye</h1> 
-      <img src="https://javascriptbook.com/code/c04/images/teacher.png" id="teacher2" alt="" />
-      <section id="blackboard">
-          <!-- Multiplication Table will be placed here -->
-      </section>
-    
-  </section>
-    
-  <script>
-    
+<section id="page2">
+
+    <h1>Bullseye</h1>
+    <img src="https://javascriptbook.com/code/c04/images/teacher.png" id="teacher2" alt=""/>
+    <section id="blackboard">
+        <!-- Multiplication Table will be placed here -->
+    </section>
+
+    <!-- Button to prompt user for a number -->
+    <button id="promptButton">Enter a number</button>
+
+</section>
+
+<script>
     // JavaScript code for generating multiplication table
-    
-    
-    // Prompt user for a value
-    var table = prompt('Enter a number for the multiplication table:');
 
-    // Initialize heading
-    var msg = '<h2>Multiplication Table for ' + table + '</h2>';
+    // Function to handle button click
+    function promptForNumber() {
+        // Prompt user for a value
+        var table = prompt('Enter a number for the multiplication table:');
 
-    // Display multiplication table
-    msg += '<table>';
-    for (var i = 1; i <= 10; i++) {
-        msg += '<tr>';
-        msg += '<td>' + table + ' &times; ' + i + '</td>';
-        msg += '<td>' + (table * i) + '</td>';
-        msg += '</tr>';
+        // Initialize heading
+        var msg = '<h2>Multiplication Table for ' + table + '</h2>';
+
+        // Display multiplication table
+        msg += '<table>';
+        for (var i = 1; i <= 10; i++) {
+            msg += '<tr>';
+            msg += '<td>' + table + ' &times; ' + i + '</td>';
+            msg += '<td>' + (table * i) + '</td>';
+            msg += '</tr>';
+        }
+        msg += '</table>';
+
+        // Update the content of the blackboard with the generated table
+        document.getElementById('blackboard').innerHTML = msg;
     }
-    msg += '</table>';
 
-    // Update the content of the blackboard with the generated table
-    document.getElementById('blackboard').innerHTML = msg;
-  </script>
+    // Attach the function to the button click event
+    document.getElementById('promptButton').addEventListener('click', promptForNumber);
+</script>
 </body>
 </html>
