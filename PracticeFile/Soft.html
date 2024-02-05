@@ -9,32 +9,69 @@
     <meta name="keywords" content="">
     <title></title>   
      <style>
-        h1 {
+
+    body {
+        font-family: "helvetica neue";
+        color: #666;
+        padding: 0 20%;
+    }
+
+    li input {
+        display: none;
+    }
+    
+    li.edit span {
+        display: none;
+    }
+
+    li.edit input {
+        display: initial;
+    }
+
+    /* h1 {
             text-align: center;
         }
 
-        h4 {
+  
+    h4 {
             text-align: center;
             color-scheme: #ffffff;
             font-weight: 100;
         }
 
-        p {
+     p {
             text-align: center;
         }
 
-        img {
+    img {
             width: 200px;
         }
 
-        .hide {
+    .hide {
             display: none;
-        }
+        } */
      </style>
   </head>
   <body>
-    <h1>Javascript Lesson</h1>
+    <header>
+        <h1>Javascript Event</h1>
+    </header>
     <main>
+        <ul id = "checklist">
+            <li>
+                <span>Apples</span>
+                <input value = "Apples"/>
+            </li>
+            <li>
+                <span>Oranges</span>
+                <input value = "Oranges"/>
+            </li>
+            <li>
+                <span>Bananas</span>
+                <input value = "Bananas"/>
+            </li>
+        </ul>
+
       <!-- <h4>Addition Lesson:</h4>
       <p>
         <input id="num-one" type="number"> +
@@ -42,16 +79,16 @@
       </p>
       <p id="add-sum"></p> -->
 
-      <h4>Pictures</h4>
+      <!-- <h4>Pictures</h4>
       <ul>
         <li><a data-image="simon-pic" id="simon" href="#">Simon Cowell</a></li>
         <li><a data-image="bruce-pic" id="bruce" href="#">Bruce Willis</a></li>
       </ul>
 
       <img class="hide" id="simon-pic" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Simon_Cowell_in_December_2011.jpg/440px-Simon_Cowell_in_December_2011.jpg">
-      <img class="hide" id="bruce-pic" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Bruce_Willis_by_Gage_Skidmore_3.jpg/440px-Bruce_Willis_by_Gage_Skidmore_3.jpg">
+      <img class="hide" id="bruce-pic" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Bruce_Willis_by_Gage_Skidmore_3.jpg/440px-Bruce_Willis_by_Gage_Skidmore_3.jpg"> -->
     </main>
 
-    <script src="Soft2.js"></script>
+    <script src="Soft3.js"></script>
   </body>
 </html>

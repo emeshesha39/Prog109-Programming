@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Rhombus Generator</title>
+</head>
+<body>
+    <header>
+        <h1>Edom Meshesha</h1>
+    </header>
+    <main>
+        <section id="input-section">
+            <label for="height">Height of each section:</label>
+            <input type="number" id="height" required min="1">
+
+            <label for="odd-color">Color for odd position:</label>
+            <select id="odd-color" required>
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+                <!-- Add more color options as needed -->
+            </select>
+
+            <label for="even-color">Color for even position:</label>
+            <select id="even-color" required>
+                <option value="purple">Purple</option>
+                <option value="orange">Orange</option>
+                <option value="yellow">Yellow</option>
+                <!-- Add more color options as needed -->
+            </select>
+
+            <label for="symbol">Symbol to be used:</label>
+            <select id="symbol" required>
+                <option value="*">*</option>
+                <option value="^">^</option>
+                <option value="%">%</option>
+                <!-- Add more symbol options as needed -->
+            </select>
+
+            <button onclick="generateRhombus()">Generate Rhombus</button>
+        </section>
+
+        <section id="output-section">
+            <!-- Output sections for the rhombus parts go here -->
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
