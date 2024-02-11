@@ -23,12 +23,28 @@
 // Garentie one execusion and then test the code
 
 
-myList = ['apple', 'orange','banana'];
+// myList = ['apple', 'orange','banana'];
 
-for(var i = 0; i < myList.length; i++) {
-    alert('I have '+ myList[i]+' in my basket');
-}
+// for(var i = 0; i < myList.length; i++) {
+//     alert('I have '+ myList[i]+' in my basket');
+// }
+
+// fetch('https://api.example.com/data')
+//   .then(response => response.json())
+//   .then(data => {
+//     console.log(data); // Do something with the retrieved data
+//   })
+//   .catch(error => {
+//     console.error('Error fetching data:', error);
+//   });
 
 
 
+var hotel = new Object();
 
+   hotel.name = 'Park';
+   hotel.rooms = 120;
+   hotel.booked = 77;
+   hotel.checkAvailability = function() {
+       return this.rooms - this.booked;
+   };

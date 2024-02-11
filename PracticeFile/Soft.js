@@ -23,6 +23,13 @@ function updateSum() {
 
 //ctrl+ D help you highlight what you want
 //crtl+/ will comment multiple script
+//myList.pop() will remove the last list
+//myList.shift() will remove the first list
+//myList.forEach(function (value, index) {
+//     alert()
+// });
+
+
 
 
 

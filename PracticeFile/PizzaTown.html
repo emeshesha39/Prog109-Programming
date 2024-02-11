@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+    <meta name="dcterms.created" content="Fri, 02 Feb 2024 23:12:58 GMT">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Pizza Town</title>  
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("https://cdn.pixabay.com/photo/2017/12/09/08/18/pizza-3007395_1280.jpg");
+            background-size: cover; /* Adjust the background size */
+            background-attachment: fixed; 
+        }
+
+        header {
+            background-color: #5335db;
+            color: rgb(230, 22, 22);
+            text-align: center;
+            padding: 1em;
+        }
+
+        header h1 {
+            margin: 0; /* Remove default margin */
+        }
+
+        label {
+            color: rgb(156, 55, 55);
+        }
+
+        legend {
+            color: rgb(225, 151, 86);
+            font-size: 130%;
+        }
+
+        /* Add color to the fieldset */
+        fieldset {
+            background-color: #1a2a32; /* Light orange color */
+            padding: 10px;
+            border-radius: 10px;
+            margin-bottom: 10px; /* Add some margin between fieldsets */
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>The Pizza Town Store</h1>
+    </header>
+
+    <form id="pizzaForm">
+        <fieldset>
+        <legend>Customer Information</legend>    
+        <p><label>Customer Name: <input id="customerName"></label></p>
+            <p><label>Telephone Number: <input id="telephoneNumber"></label></p>
+            <p><label>Email Address: <input id="emailAddress"></label></p>
+        </fieldset>
+        <fieldset>
+            <legend>Pizza Size</legend>
+            <p><label><input type="Radio" name="Size"> Small </label></p>
+            <p><label><input type="Radio" name="Size"> Medium </label></p>
+            <p><label><input type="Radio" name="Size"> Large </label></p>
+        </fieldset>
+        <fieldset>
+            <legend>Pizza Topping</legend>
+            <p><label><input type="checkbox"> Bacon</label></p>
+            <p><label><input type="checkbox"> Cheese</label></p>
+            <p><label><input type="checkbox"> Pepperoni</label></p>
+            <p><label><input type="checkbox"> Onion</label></p>
+            <p><label><input type="checkbox"> Mushroom</label></p>
+        </fieldset>
+        <p><label>Preferred Delivery Time: <input type="time" min="11:00" max="21:00" step="900"></label></p>
+        <p><label>Delivery Instruction: <textarea></textarea></label></p>
+        <button type="button" onclick="submitOrder()">Submit Order</button>
+    </form>
+
+    <script>
+        function submitOrder() {
+            var customerName = document.getElementById("customerName").value;
+            var telephoneNumber = document.getElementById("telephoneNumber").value;
+            var emailAddress = document.getElementById("emailAddress").value;
+
+            // Perform further processing or validation as needed
+
+            alert("Order submitted for " + customerName);
+            alert("Telephone Number " + telephoneNumber);
+        }
+    </script>
+
+</body>
+</html>

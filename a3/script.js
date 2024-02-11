@@ -9,13 +9,13 @@ function generateRhombus() {
     document.getElementById('output-section').innerHTML = '';
 
     // Generate upward part of the rhombus
-    for (let i = 1; i <= height; i++) {
+    for (var i = 1; i <= height; i++) {
         var line = createRhombusLine(i, height, oddColor, evenColor, symbol);
         document.getElementById('output-section').innerHTML += line;
     }
 
     // Generate downward part of the rhombus (excluding the middle row for odd height)
-    for (let i = height - 2; i >= 0; i--) {
+    for (var i = height - 2; i >= 0; i--) {
         var line = createRhombusLine(i, height, oddColor, evenColor, symbol);
         document.getElementById('output-section').innerHTML += line;
     }
