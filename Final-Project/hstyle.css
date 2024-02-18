@@ -8,6 +8,37 @@ body {
   font-family: 'Arial', sans-serif;
 }
 
+#video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Set height to viewport height */
+    overflow: hidden; /* Hide video overflow */
+}
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Make video cover the container */
+}
+#animation {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255, 0, 0, 0.5);
+    border-radius: 50%;
+    animation: rotate 4s linear infinite; /* Add animation */
+}
+@keyframes rotate {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
 a {
   color: #4d4dff;
 }

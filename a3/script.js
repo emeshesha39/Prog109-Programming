@@ -6,45 +6,25 @@ function generateRhombus() {
     var symbol = document.getElementById('symbol').value;
 
     // Clear previous output
-    document.getElementById('left-rhombus').innerHTML = '';
-    document.getElementById('right-rhombus').innerHTML = '';
+    document.getElementById('diamond-rhombus').innerHTML = '';
 
-    // Generate the left side of the diamond rhombus
+    // Generate the upper half of the diamond rhombus
     for (var i = 1; i <= height; i++) {
-        var line = createRhombusLine(i, height, oddColor, evenColor, symbol, 'up_left');
-        document.getElementById('left-rhombus').innerHTML += line;
+        var line = createRhombusLine(i, height, oddColor, evenColor, symbol);
+        document.getElementById('diamond-rhombus').innerHTML += line + '<br>';
     }
 
-    for (var i = height - 2; i >= 0; i--) {
-        var line = createRhombusLine(i + 1, height, oddColor, evenColor, symbol, 'down_right');
-        document.getElementById('left-rhombus').innerHTML += line;
-    }
-
-    // Generate the right side of the diamond rhombus
-    for (var i = 1; i <= height; i++) {
-        var line = createRhombusLine(i, height, oddColor, evenColor, symbol, 'up_right');
-        document.getElementById('right-rhombus').innerHTML += line;
-    }
-
-    for (var i = height - 2; i >= 0; i--) {
-        var line = createRhombusLine(i + 1, height, oddColor, evenColor, symbol, 'down_left');
-        document.getElementById('right-rhombus').innerHTML += line;
+    // Generate the lower half of the diamond rhombus
+    for (var i = height - 1; i >= 1; i--) {
+        var line = createRhombusLine(i, height, oddColor, evenColor, symbol);
+        document.getElementById('diamond-rhombus').innerHTML += line + '<br>';
     }
 }
 
-function createRhombusLine(row, height, oddColor, evenColor, symbol, direction) {
-    var spaces;
-    if (direction === 'up_left') {
-        spaces = ' '.repeat(height - row);
-    } else if (direction === 'down_right') {
-        spaces = ' '.repeat(row);
-    } else if (direction === 'up_right') {
-        spaces = ' '.repeat(row);
-    } else if (direction === 'down_left') {
-        spaces = ' '.repeat(height - row);
-    }
+function createRhombusLine(row, height, oddColor, evenColor, symbol) {
+    var spaces = ' '.repeat(Math.abs(height - row));
     var color = row % 2 === 0 ? evenColor : oddColor;
-    var rhombusPart = `<div style="color: ${color};">${spaces}${symbol.repeat(row * 2 - 1)}</div>`;
+    var rhombusPart = `<span style="color: ${color};">${spaces}${symbol.repeat(row * 2 - 1)}</span>`;
     return rhombusPart;
 }
 

@@ -228,3 +228,20 @@ border-top: 1px solid #1f1f1f;
   background-color: #808080; /* Change to the desired hover color (gray in this example) */
   color: #fff; /* Optionally, change the text color on hover */
 }
+
+.animated-section {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
