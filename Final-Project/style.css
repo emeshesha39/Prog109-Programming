@@ -235,6 +235,10 @@ border-top: 1px solid #1f1f1f;
   animation: fadeIn 1s ease-in-out forwards;
 }
 
+#errorMessages{
+  color:red;
+  }
+
 @keyframes fadeIn {
   from {
       opacity: 0;

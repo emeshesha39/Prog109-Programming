@@ -4,20 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-<title>Contact</title>
+    <title>Contact</title>
 </head>
 <body>
 <div id="wrap">
-
-<div id="header">
-<h1>Contact</h1>
-  <h2>ACCOMPLISH THROUGTH THE EYEZ OF OTHERS</h2>
-  </div>
+    <div id="header">
+        <h1>Contact</h1>
+        <h2>ACCOMPLISH THROUGH THE EYES OF OTHERS</h2>
+    </div>
 
     <div id="topmenu">
-    <div class="search">
-    </div>
-    <ul>
+        <ul>
             <li><a href="home.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="coursework.html">Coursework</a></li>
@@ -26,9 +23,9 @@
             <li><a href="contact.html">Contact me</a></li>
             <li><a href="personal_interest.html">Interest</a></li>
             <li><a href="validated.html">Validated</a></li>
-
-    </ul>
+        </ul>
     </div>
+
     <!-- Content specific to the Contact page -->
     <section>
         <h2>Contact Me</h2>
@@ -45,6 +42,8 @@
 
             <input type="submit" value="Submit">
         </form>
+        <!-- Error message placeholder -->
+        <div id="errormessage"></div>
     </section>
 
     <!-- Common Footer -->
@@ -55,21 +54,32 @@
     <!-- JavaScript Validation -->
     <script>
         function validateForm() {
-            var name = document.getElementById('name').value;
-            var email = document.getElementById('email').value;
-            var comment = document.getElementById('comment').value;
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var comment = document.getElementById('comment').value;
+        var errorMessage = document.getElementById('errormessage');
 
-            // Simple validation example (customize as needed)
-            if (name === '' || email === '' || comment === '') {
-                alert('Please fill in all fields');
-                return false;
-            }
+        // Clear any previous error messages
+        errorMessage.innerHTML = '';
 
-            // Additional validation logic can be added here
-
-            return true;
+        // Name validation: Only alphabetic characters allowed
+        if (!/^[A-Za-z\s]+$/.test(name)) {
+            errorMessage.innerHTML += 'Name must contain only alphabetic characters<br>';
+            return false;
         }
-    </script> 
-   </div>
+
+        // Email validation: Check for '@' and domain
+        if (!/\S+@\S+\.\S+/.test(email)) {
+            errorMessage.innerHTML += 'Email address is not valid<br>';
+            return false;
+        }
+
+        // Comment validation: No specific validation added in this example
+
+        // If all validations pass, return true
+        return true;
+    }
+</script>
+</div>
 </body>
 </html>
