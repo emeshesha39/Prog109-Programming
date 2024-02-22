@@ -1,0 +1,64 @@
+body {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #857474; /* Change background color to a lighter shade */
+}
+
+.container {
+    max-width: 600px; /* Limit container width for better readability */
+    margin: 50px auto; /* Add margin to center the container vertically */
+    padding: 20px; /* Add padding for spacing inside the container */
+    background-color: #fff; /* Set background color for the container */
+    border-radius: 10px; /* Add border radius for rounded corners */
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1); /* Add shadow for depth */
+}
+
+h1 {
+    text-align: center;
+    color: #6952dd; /* Change text color to a darker shade */
+}
+
+form {
+    text-align: left; /* Align form elements to the left */
+}
+
+.form-group {
+    margin-bottom: 20px; /* Add margin between form groups */
+}
+
+label {
+    display: block; /* Display labels as block elements for better spacing */
+    margin-bottom: 5px; /* Add margin below labels */
+    color: #555; /* Adjust label color */
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    width: 100%; /* Make form inputs 100% width */
+    padding: 10px; /* Add padding for better appearance */
+    border: 1px solid #ccc; /* Add border for input elements */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    box-sizing: border-box; /* Include padding and border in element's total width */
+}
+
+input[type="submit"] {
+    width: auto; /* Reset width for submit button */
+    padding: 10px 20px; /* Add padding for button */
+    background-color: #007bff; /* Change button background color */
+    color: #fff; /* Change button text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add border radius */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Change button background color on hover */
+}
+
+#errormessage {
+    color: #ff0000; /* Set error message color to red */
+    text-align: center; /* Align error message to center */
+    margin-top: 10px; /* Add margin at the top */
+}
