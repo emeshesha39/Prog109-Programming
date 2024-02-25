@@ -21,11 +21,17 @@ document.addEventListener('DOMContentLoaded', function () {
         if (firstName === '') {
             errorMessage.innerHTML += '<p>Please enter your first name.</p>';
             isValid = false;
+        } else if (!isValidName(firstName)) {
+            errorMessage.innerHTML += '<p>First name should only contain alphabetic characters.</p>';
+            isValid = false;
         }
 
         // Validation for Last Name
         if (lastName === '') {
             errorMessage.innerHTML += '<p>Please enter your last name.</p>';
+            isValid = false;
+        } else if (!isValidName(lastName)) {
+            errorMessage.innerHTML += '<p>Last name should only contain alphabetic characters.</p>';
             isValid = false;
         }
 
@@ -43,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
             errorMessage.innerHTML += '<p>Please enter your phone number.</p>';
             isValid = false;
         } else if (!isValidPhone(phone)) {
-            errorMessage.innerHTML += '<p>Please enter a valid phone number.</p>';
+            errorMessage.innerHTML += '<p>Please enter a valid phone number (only numbers and dashes are allowed).</p>';
             isValid = false;
         }
 
@@ -76,7 +82,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Function to validate phone number
     function isValidPhone(phone) {
-        var re = /^[0-9]+$/;
+        var re = /^[0-9-]+$/;
         return re.test(phone);
+    }
+
+    // Function to validate name (only alphabetic characters)
+    function isValidName(name) {
+        var re = /^[a-zA-Z]+$/;
+        return re.test(name);
     }
 });
