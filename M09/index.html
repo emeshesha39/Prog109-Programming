@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dot Drawing Form</title>
+</head>
+<body>
+    <h1>Dot Drawing Form</h1>
+
+    <div>
+        <label for="colorSelect">Select Color:</label>
+        <select id="colorSelect">
+            <option value="black">Black</option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+            <option value="yellow">Yellow</option>
+        </select>
+    </div>
+    
+    <div>
+        <label for="sizeSelect">Select Size:</label>
+        <select id="sizeSelect">
+            <option value="5">Small</option>
+            <option value="10" selected>Medium</option>
+            <option value="15">Large</option>
+        </select>
+    </div>
+    
+    <button id="clearButton">Clear Screen</button>
+    
+    <div id="drawingArea"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
