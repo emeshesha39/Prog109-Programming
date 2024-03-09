@@ -3,48 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>Video Page</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-    }
-    .video-container {
-      position: relative;
-      width: 100%;
-      height: 100vh;
-    }
-    video {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-    #animation {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 200px;
-      height: 200px;
-      background-color: rgba(255, 0, 0, 0.5);
-      border-radius: 50%;
-      animation: rotate 4s linear infinite;
-    }
-    @keyframes rotate {
-      0% {
-        transform: translate(-50%, -50%) rotate(0deg);
-      }
-      100% {
-        transform: translate(-50%, -50%) rotate(360deg);
-      }
-    }
-  </style>
 </head>
 <body>
+  <div id="wrap">
+    <div id="header">
+        <h1>Video Page</h1>
+        <h2>ACCOMPLISH THROUGH THE EYES OF OTHERS</h2>
+    </div>
+
+    <div id="topmenu">
+
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="coursework.html">Coursework</a></li>
+            <li><a href="artifacts.html">Artifacts</a></li>
+            <li><a href="module_assignments.html">Module Assignments</a></li>
+            <li><a href="contact.html">Contact me</a></li>
+            <li><a href="personal_interest.html">Interest</a></li>
+            <li><a href="validated.html">Validated</a></li>
+        </ul>
+    </div>
 
 <div class="video-container">
   <video width="500" height="360" controls>
-    <source src="https://github.com/emeshesha39/Prog109-Programming/blob/main/Final-Project/video/WIN_20240202_13_07_12_Pro.mp4" type="video/mp4">
+    <source src="https://obamawhitehouse.archives.gov/videos/2016/October/20161017_POTUS_Remarks_on_Education_HD.mp4">
     Your browser does not support the video tag.
   </video>
   <div id="animation"></div>
