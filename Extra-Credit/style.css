@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px; /* Adjust the width as needed */
+    margin: 0 auto;
+    padding: 20px; /* Add some padding around the container */
+    border: 1px solid #ccc; /* Add a border for visual separation */
+    border-radius: 10px; /* Add rounded corners for a more modern look */
+    background-color: #fff; /* Add a white background to the container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+    overflow: hidden; /* Ensure the image stays within the container */
+}
+
+h1 {
+    margin-top: 0; /* Remove margin from the top of the heading */
+}
+
+.instructions {
+    margin-top: 20px;
+}
+
+.object-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px; /* Add some space between the list and the instructions */
+}
+
+.object-list li {
+    cursor: pointer;
+}
+
+.object-list li:hover {
+    text-decoration: underline;
+}
+
+area {
+    cursor: pointer;
+}
+
+img {
+    display: block;
+    max-width: 100%; /* Ensure the image does not exceed the container width */
+    height: auto; /* Maintain the aspect ratio of the image */
+    margin: 0 auto; /* Center the image horizontally */
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Spy Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>I Spy Game</h1>
+        <img src="I Spy game.jpg" alt="I Spy Image" usemap="#image-map" width="1000" height="700">
+        <div class="instructions">
+            <h2>Instructions</h2>
+            <p>Click on each object you find in the image.</p>
+        </div>
+        <ul class="object-list">
+            <li data-item="MickeyMouse">MickeyMouse</li>
+            <li data-item="Lock">Lock</li>
+            <li data-item="Ring">Ring</li>
+            <li data-item="Shell">Shell</li>
+            <!-- Add more list items for other objects -->
+        </ul>
+    </div>
+
+    <map name="image-map">
+        <!-- Adjust coordinates for each object -->
+        <area target="_top" alt="MickeyMouse" title="MickeyMouse" coords="240,550,150" shape="circle">
+        <area target="_top" alt="Lock" title="Lock"  coords="900,425,20" shape="circle">
+        <area target="_self" alt="Ring" title="Ring" coords="238,189,243,189,243,194,238,194" shape="poly">
+        <area target="_top" alt="Shell" title="Shell"  coords="404,129,406,131,408,133,408,135,407,137,404,139,402,139,400,137,399,135,399,133,401,131" shape="poly">
+        <!-- Add more areas for other objects -->
+    </map>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
