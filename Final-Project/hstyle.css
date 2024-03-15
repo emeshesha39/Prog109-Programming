@@ -246,3 +246,33 @@ a:hover {
   animation-delay: 7s;
 }
 
+
+#musicPlayer {
+  width: 100%; /* Adjust width as needed */
+  margin-top: 20px; /* Add margin to separate from content */
+}
+
+/* Change the background color of the audio player */
+#musicPlayer {
+  background-color: #ea0a0a; /* Example color: dark gray */
+}
+
+/* Change the color of the controls (play, pause, volume) */
+#musicPlayer::-webkit-media-controls-start-playback-button {
+  color: #fff; /* Example color: white */
+}
+
+/* Change the color of the progress bar */
+#musicPlayer::-webkit-media-controls-current-time-display,
+#musicPlayer::-webkit-media-controls-time-remaining-display,
+#musicPlayer::-webkit-media-controls-seek-back-button,
+#musicPlayer::-webkit-media-controls-seek-forward-button,
+#musicPlayer::-webkit-media-controls-mute-button,
+#musicPlayer::-webkit-media-controls-volume-slider {
+  color: #fff; /* Example color: white */
+}
+
+/* Change the color of the progress bar track */
+#musicPlayer::-webkit-media-controls-panel {
+  background-color: #555; /* Example color: slightly darker than background */
+}

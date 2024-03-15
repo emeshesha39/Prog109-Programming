@@ -269,6 +269,18 @@ video {
   max-width: 100%; /* Ensure the video doesn't exceed its container */
   display: block; /* Prevent any default margins causing misalignment */
 }
+
+.music-container {
+  display: flex;
+  justify-content: center; /* Horizontally center the content */
+  align-items: center; /* Vertically center the content */
+  height: 100vh; /* Adjust the height as needed */
+}
+
+.music {
+  width: 80%; /* Adjust the width of the audio player */
+  max-width: 600px; /* Set a maximum width if needed */
+}
 @keyframes rotate {
   0% {
     transform: translate(-50%, -50%) rotate(0deg);
