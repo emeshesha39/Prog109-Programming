@@ -29,12 +29,13 @@ label {
     display: block;
     margin-bottom: 5px;
     color: #f8f5f5;
+    width: 100%; /* Make sure label doesn't exceed container width */
 }
 
 input[type="text"],
 textarea,
 select {
-    width: 100%;
+    width: calc(100% - 22px); /* Adjust width to accommodate padding and border */
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 3px;
