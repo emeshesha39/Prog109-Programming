@@ -115,9 +115,9 @@ document.addEventListener('DOMContentLoaded', function () {
         return re.test(name);
     }
 
-    // Function to validate password (at least 1 uppercase, 1 lowercase, 1 number, 1 special character)
+  // Function to validate password (at least 1 uppercase, 1 lowercase, 1 number, 1 special character, maximum 7 characters)
     function isValidPassword(password) {
-        var re = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+])[A-Za-z\d!@#$%^&*()_+]{8,}$/;
-        return re.test(password);
-    }
+    var re = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+])[A-Za-z\d!@#$%^&*()_+]{1,7}$/;
+    return re.test(password);
+}
 });
